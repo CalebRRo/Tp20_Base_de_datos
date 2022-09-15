@@ -37,3 +37,37 @@ module.exports = (sequelize, dataTypes) => {
 
     return Genre
 }
+
+/* 'use strict';
+
+module.exports = (sequelize, DataTypes) => {
+    const cols ={
+         id: {
+            type:DataTypes.INTEGER.UNSIGNED,
+            primaryKey: true,
+            autoIncrement: true,
+            allowNull: false,
+          },
+          nombre: {
+type: DataTypes.STRING(200),
+      allowNull: false,
+          },
+          descripcion: {
+type: Datatypes.TEXT,
+allowNull: false,
+          },
+          precio: {
+type: Datatypes.DECIMAL,
+allowNull: false,
+          }
+    };
+     const config = {
+
+        tableName : "productos",
+        timestamps : true,
+        underscored : true
+    }
+    const product = sequelize.define('Product',cols,config);
+ 	return product;
+}; */
+
